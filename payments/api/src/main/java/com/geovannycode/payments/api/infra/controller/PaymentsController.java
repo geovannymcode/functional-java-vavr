@@ -1,4 +1,4 @@
-package com.geovannycode.payments.api.infra.http;
+package com.geovannycode.payments.api.infra.controller;
 
 import com.geovannycode.payments.api.app.PaymentService;
 import com.geovannycode.payments.api.domain.ApprovedDto;
