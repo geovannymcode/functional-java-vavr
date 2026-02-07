@@ -1,6 +1,6 @@
-package com.geovannycode.payments.api.config;
+package com.geovannycode.payments.api.infra.config;
 
-import com.geovannycode.payments.api.service.PaymentService;
+import com.geovannycode.payments.api.app.PaymentService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

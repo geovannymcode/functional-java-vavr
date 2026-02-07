@@ -12,7 +12,10 @@ dependencies {
     // Jackson para Option / Either
     implementation("io.vavr:vavr-jackson:1.0.0")
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
+    }
+    testImplementation("org.springframework.boot:spring-boot-starter-webflux")
 }
 
 tasks.test {

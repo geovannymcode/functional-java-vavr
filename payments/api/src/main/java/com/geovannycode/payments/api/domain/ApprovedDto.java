@@ -1,3 +1,3 @@
-package com.geovannycode.payments.api.dto;
+package com.geovannycode.payments.api.domain;
 
 public record ApprovedDto(String transactionId) {}

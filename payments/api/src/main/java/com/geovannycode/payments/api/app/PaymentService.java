@@ -1,8 +1,8 @@
-package com.geovannycode.payments.api.service;
+package com.geovannycode.payments.api.app;
 
-import com.geovannycode.payments.api.dto.ApprovedDto;
-import com.geovannycode.payments.api.dto.ErrorDto;
-import com.geovannycode.payments.api.dto.PaymentRequestDto;
+import com.geovannycode.payments.api.domain.ApprovedDto;
+import com.geovannycode.payments.api.domain.ErrorDto;
+import com.geovannycode.payments.api.domain.PaymentRequestDto;
 import io.vavr.control.Either;
 
 import java.math.BigDecimal;

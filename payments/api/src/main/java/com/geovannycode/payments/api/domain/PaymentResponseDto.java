@@ -1,4 +1,4 @@
-package com.geovannycode.payments.api.dto;
+package com.geovannycode.payments.api.domain;
 
 import io.vavr.control.Either;
 

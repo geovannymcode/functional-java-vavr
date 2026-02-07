@@ -1,4 +1,4 @@
-package com.geovannycode.payments.api.config;
+package com.geovannycode.payments.api.infra.config;
 
 import io.vavr.jackson.datatype.VavrModule;
 import org.springframework.context.annotation.Bean;

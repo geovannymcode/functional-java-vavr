@@ -1,10 +1,10 @@
-package com.geovannycode.payments.api.controller;
+package com.geovannycode.payments.api.infra.http;
 
-import com.geovannycode.payments.api.dto.ApprovedDto;
-import com.geovannycode.payments.api.dto.ErrorDto;
-import com.geovannycode.payments.api.dto.PaymentRequestDto;
-import com.geovannycode.payments.api.dto.PaymentResponseDto;
-import com.geovannycode.payments.api.service.PaymentService;
+import com.geovannycode.payments.api.app.PaymentService;
+import com.geovannycode.payments.api.domain.ApprovedDto;
+import com.geovannycode.payments.api.domain.ErrorDto;
+import com.geovannycode.payments.api.domain.PaymentRequestDto;
+import com.geovannycode.payments.api.domain.PaymentResponseDto;
 import io.vavr.control.Either;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
