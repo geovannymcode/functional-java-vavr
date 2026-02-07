@@ -23,11 +23,11 @@ public class App {
 
         var result = service.process(req);
 
-        /*System.out.println(
-                result.fold(
+        System.out.println(
+                result.<String>fold(
                         err -> "ERROR: " + err.message(),
                         txId -> "OK: " + txId
                 )
-        );*/
+        );
     }
 }
