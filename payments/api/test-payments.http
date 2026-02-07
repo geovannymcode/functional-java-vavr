@@ -1,0 +1,58 @@
+### Caso exitoso - Pago aprobado
+POST http://localhost:8080/api/payments
+Content-Type: application/json
+
+{
+  "customerId": "CUST-001",
+  "sourceAccount": "ACC-001",
+  "destinationAccount": "ACC-XYZ",
+  "amount": 100.50,
+  "concept": "Pago de servicio"
+}
+
+### Caso exitoso - Sin concepto (Option.none)
+POST http://localhost:8080/api/payments
+Content-Type: application/json
+
+{
+  "customerId": "CUST-002",
+  "sourceAccount": "ACC-001",
+  "destinationAccount": "ACC-XYZ",
+  "amount": 50.00
+}
+
+### Error de validación - Amount negativo
+POST http://localhost:8080/api/payments
+Content-Type: application/json
+
+{
+  "customerId": "CUST-003",
+  "sourceAccount": "ACC-001",
+  "destinationAccount": "ACC-XYZ",
+  "amount": -10.00,
+  "concept": "Pago inválido"
+}
+
+### Error de validación - Amount cero
+POST http://localhost:8080/api/payments
+Content-Type: application/json
+
+{
+  "customerId": "CUST-004",
+  "sourceAccount": "ACC-001",
+  "destinationAccount": "ACC-XYZ",
+  "amount": 0,
+  "concept": "Pago cero"
+}
+
+### Error de negocio - Saldo insuficiente (ACC-002)
+POST http://localhost:8080/api/payments
+Content-Type: application/json
+
+{
+  "customerId": "CUST-005",
+  "sourceAccount": "ACC-002",
+  "destinationAccount": "ACC-XYZ",
+  "amount": 100.00,
+  "concept": "Pago con saldo insuficiente"
+}
